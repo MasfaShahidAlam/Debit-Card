@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 84.5rem;
+    height: 37.9rem;
+    background-color: rgb(80, 80, 80);
+    display: flex;
+    justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     font-family: 'Arial', sans-serif;
+     perspective: 1000px;
+}
+
+.card {
+    width: 350px;
+    height: 220px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    background: linear-gradient(135deg, #a9b2bd, #1c2d53);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #000000;
+    font-weight: 600;
+    font-size: large;
+    border-radius: 15px;
+  }
+  .card:hover {
+    transform: rotateY(180deg);
+  }
+.card-front , .card-back{
+   height: 100%;
+   width: 100%;
+   backface-visibility: hidden;
+   position: absolute;
+ 
+   margin-bottom: 20px;
+
+
+
+   
+ 
+  
+   
+  
+
+}
+
+.card-back{
+  
+font-size: 12px;
+transform: rotateY(180deg);
+ 
+ }
+
+
+
+.card-num p{
+  margin-right: 2px;
+  
+}
+.visa-logo{
+    float: right;
+}
+/* =================End front Side ================ */
+
+.black-slide{
+    width: 21.9rem;
+    height: 2rem;
+    background-color: black;
+    
+}
+
+.white-slide{
+    width: 19rem;
+    height: 2rem;
+    background-color: rgb(197, 195, 195);
+    color: black;
+ text-align: right;
+    font-size: 1rem;
+}
+
+/* =======End Card backside ======= */
+
+
+/* input data */
+  
+.user-input {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+input {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+input:focus {
+    outline: none;
+    border-color: #0a4a83;
+}
+  
+  
+  
+ 
+  
+ 
